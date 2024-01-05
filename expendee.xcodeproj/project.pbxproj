@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		E464CB4E2ACFE5710039AE61 /* expendeeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E464CB4D2ACFE5710039AE61 /* expendeeApp.swift */; };
-		E464CB502ACFE5710039AE61 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E464CB4F2ACFE5710039AE61 /* ContentView.swift */; };
 		E464CB522ACFE5720039AE61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E464CB512ACFE5720039AE61 /* Assets.xcassets */; };
-		E464CB562ACFE5720039AE61 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E464CB552ACFE5720039AE61 /* Preview Assets.xcassets */; };
 		E464CB5D2ACFE6160039AE61 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E464CB5C2ACFE6160039AE61 /* SignIn.swift */; };
+		E4988C342B47F83A008BD48A /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4988C332B47F83A008BD48A /* Input.swift */; };
+		E4988C362B47F8F0008BD48A /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4988C352B47F8F0008BD48A /* Text.swift */; };
+		E4988C382B47FA3A008BD48A /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4988C372B47FA3A008BD48A /* Button.swift */; };
+		E4988C3C2B48010A008BD48A /* SocialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4988C3B2B48010A008BD48A /* SocialButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E464CB4A2ACFE5710039AE61 /* expendee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = expendee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E464CB4D2ACFE5710039AE61 /* expendeeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = expendeeApp.swift; sourceTree = "<group>"; };
-		E464CB4F2ACFE5710039AE61 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E464CB512ACFE5720039AE61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E464CB532ACFE5720039AE61 /* expendee.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = expendee.entitlements; sourceTree = "<group>"; };
-		E464CB552ACFE5720039AE61 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E464CB532ACFE5720039AE61 /* Entitlements.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Entitlements.entitlements; sourceTree = "<group>"; };
 		E464CB5C2ACFE6160039AE61 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		E4988C332B47F83A008BD48A /* Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
+		E4988C352B47F8F0008BD48A /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		E4988C372B47FA3A008BD48A /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		E4988C3B2B48010A008BD48A /* SocialButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,22 +58,48 @@
 		E464CB4C2ACFE5710039AE61 /* expendee */ = {
 			isa = PBXGroup;
 			children = (
+				E4988C302B47F589008BD48A /* Views */,
+				E464CB542ACFE5720039AE61 /* Assets */,
 				E464CB4D2ACFE5710039AE61 /* expendeeApp.swift */,
-				E464CB4F2ACFE5710039AE61 /* ContentView.swift */,
-				E464CB512ACFE5720039AE61 /* Assets.xcassets */,
-				E464CB532ACFE5720039AE61 /* expendee.entitlements */,
-				E464CB542ACFE5720039AE61 /* Preview Content */,
-				E464CB5C2ACFE6160039AE61 /* SignIn.swift */,
 			);
 			path = expendee;
 			sourceTree = "<group>";
 		};
-		E464CB542ACFE5720039AE61 /* Preview Content */ = {
+		E464CB542ACFE5720039AE61 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				E464CB552ACFE5720039AE61 /* Preview Assets.xcassets */,
+				E464CB512ACFE5720039AE61 /* Assets.xcassets */,
+				E464CB532ACFE5720039AE61 /* Entitlements.entitlements */,
 			);
-			path = "Preview Content";
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		E4988C302B47F589008BD48A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E4988C322B47F827008BD48A /* Modifiers */,
+				E4988C3A2B4800F5008BD48A /* Supporting Views */,
+				E464CB5C2ACFE6160039AE61 /* SignIn.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E4988C322B47F827008BD48A /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				E4988C332B47F83A008BD48A /* Input.swift */,
+				E4988C352B47F8F0008BD48A /* Text.swift */,
+				E4988C372B47FA3A008BD48A /* Button.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		E4988C3A2B4800F5008BD48A /* Supporting Views */ = {
+			isa = PBXGroup;
+			children = (
+				E4988C3B2B48010A008BD48A /* SocialButton.swift */,
+			);
+			path = "Supporting Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -100,7 +130,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1510;
 				TargetAttributes = {
 					E464CB492ACFE5710039AE61 = {
 						CreatedOnToolsVersion = 15.0;
@@ -130,7 +160,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E464CB562ACFE5720039AE61 /* Preview Assets.xcassets in Resources */,
 				E464CB522ACFE5720039AE61 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,8 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E464CB502ACFE5710039AE61 /* ContentView.swift in Sources */,
+				E4988C382B47FA3A008BD48A /* Button.swift in Sources */,
+				E4988C342B47F83A008BD48A /* Input.swift in Sources */,
+				E4988C3C2B48010A008BD48A /* SocialButton.swift in Sources */,
 				E464CB5D2ACFE6160039AE61 /* SignIn.swift in Sources */,
+				E4988C362B47F8F0008BD48A /* Text.swift in Sources */,
 				E464CB4E2ACFE5710039AE61 /* expendeeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,6 +217,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -246,6 +279,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -270,10 +304,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = expendee/expendee.entitlements;
+				CODE_SIGN_ENTITLEMENTS = expendee/Assets/Entitlements.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"expendee/Preview Content\"";
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = YBVLTH5SD7;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -308,10 +343,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = expendee/expendee.entitlements;
+				CODE_SIGN_ENTITLEMENTS = expendee/Assets/Entitlements.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"expendee/Preview Content\"";
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = YBVLTH5SD7;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
