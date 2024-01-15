@@ -19,7 +19,10 @@ struct PageSignIn: View {
                     Text("Expendee").themedTextBranding()
                     
                     Text("Sign In With Your Expendee ID").themedTextSectionHeader()
-                    TextField("Username", text: $username).themedInput().keyboardType(.emailAddress)
+                    TextField("Username", text: $username).themedInput()
+                    #if(os(iOS))
+                        .keyboardType(.emailAddress)
+                    #endif
                     SecureField("Password", text: $password).themedInput()
                     Button("Sign In") {}
                         .frame(maxWidth: .infinity)

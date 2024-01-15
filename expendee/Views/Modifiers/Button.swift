@@ -21,7 +21,7 @@ struct ButtonSecondary: ViewModifier {
     func body(content: Content) -> some View {
         content
             .padding()
-            .background(RoundedRectangle(cornerRadius: 12).foregroundStyle(Color.accentColor.opacity(0.2)))
+            .background(RoundedRectangle(cornerRadius: 12).foregroundStyle(Color.accentColor.opacity(0.15)))
             .foregroundStyle(Color.accentColor)
             .fontWeight(.bold)
     }
