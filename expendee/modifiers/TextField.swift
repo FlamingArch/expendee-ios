@@ -10,6 +10,7 @@ import SwiftUI
 struct ThemedTextField: ViewModifier {
     func body(content: Content) -> some View {
         content
+            .font(.custom("Manrope", size: 16))
             .padding(16)
             .background(RoundedRectangle(cornerRadius: 16.0).foregroundColor(Color.card))
     }

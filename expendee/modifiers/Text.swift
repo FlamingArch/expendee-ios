@@ -10,8 +10,9 @@ import SwiftUI
 struct ThemedCaptionText: ViewModifier {
     func body(content: Content) -> some View {
         content
+            .font(.custom("Manrope", size: 16))
             .fontWeight(.bold)
-            .opacity(0.8)
+            .opacity(0.6)
     }
 }
 
