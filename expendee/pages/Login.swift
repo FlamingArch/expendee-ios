@@ -23,11 +23,9 @@ struct PageLogin: View {
                 TextField("Username", text: $username).modifier(ThemedTextField())
                 SecureField("Password", text: $password).modifier(ThemedTextField())
                 
-                Button {
-                    
-                } label: {
+                Button { } label: {
                     Text("Sign In").frame(maxWidth: .infinity)
-                }
+                }.modifier(ThemedPrimaryButton())
                 
                 Text("Or Continue Via").opacity(0.8)
                 
@@ -35,7 +33,7 @@ struct PageLogin: View {
                 
                 Button {} label: {
                     Text("Sign Up").frame(maxWidth: .infinity)
-                }
+                }.modifier(ThemedSecondaryButton())
             }
             .padding(24)
         }
