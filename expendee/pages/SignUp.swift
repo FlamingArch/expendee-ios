@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SignUp: View {
+    @Environment(\.dismiss) var dismiss
     @State private var username: String = ""
     @State private var password: String = ""
     @State private var repeatPassword: String = ""
@@ -33,7 +34,9 @@ struct SignUp: View {
         .background(Color.scaffold.ignoresSafeArea())
         .overlay(alignment: .topLeading) {
             HStack {
-                Button{ } label: {
+                Button{
+                    dismiss()
+                } label: {
                     HStack {
                         Image(systemName: "chevron.backward")
                         Text("Sign In").fontWeight(.bold).font(.custom("Manrope", size: 16))
@@ -41,6 +44,7 @@ struct SignUp: View {
                 }
             }
             .padding(24)
+            .navigationBarBackButtonHidden()
         }
     }
 }

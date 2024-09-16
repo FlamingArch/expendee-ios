@@ -29,9 +29,12 @@ struct PageLogin: View {
             
             Text("Don't Have an Account?").modifier(ThemedCaptionText())
             
-            Button {} label: {
+            NavigationLink {
+                SignUp()
+            } label: {
                 Text("Sign Up").frame(maxWidth: .infinity)
             }.modifier(ThemedSecondaryButton())
+            
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .padding(24)
@@ -40,5 +43,7 @@ struct PageLogin: View {
 }
 
 #Preview {
-    PageLogin()
+    NavigationStack {
+        PageLogin()
+    }
 }
