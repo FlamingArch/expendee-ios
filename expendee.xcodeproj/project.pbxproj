@@ -8,18 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		34282E5E2C971B6C00895112 /* expendeeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34282E5D2C971B6C00895112 /* expendeeApp.swift */; };
-		34282E602C971B6C00895112 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34282E5F2C971B6C00895112 /* ContentView.swift */; };
+		34282E602C971B6C00895112 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34282E5F2C971B6C00895112 /* Login.swift */; };
 		34282E622C971B6D00895112 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34282E612C971B6D00895112 /* Assets.xcassets */; };
 		34282E662C971B6D00895112 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34282E652C971B6D00895112 /* Preview Assets.xcassets */; };
+		34282E6E2C97697300895112 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34282E6D2C97697300895112 /* constants.swift */; };
+		34282E702C976ABB00895112 /* PlayfairDisplay.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 34282E6F2C976ABB00895112 /* PlayfairDisplay.ttf */; };
+		34282E772C97898800895112 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34282E762C97898800895112 /* TextField.swift */; };
+		3466C67C2C9854A3002FFCDA /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3466C67B2C9854A3002FFCDA /* Button.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		34282E5A2C971B6C00895112 /* expendee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = expendee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34282E5D2C971B6C00895112 /* expendeeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = expendeeApp.swift; sourceTree = "<group>"; };
-		34282E5F2C971B6C00895112 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		34282E5F2C971B6C00895112 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		34282E612C971B6D00895112 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34282E632C971B6D00895112 /* expendee.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = expendee.entitlements; sourceTree = "<group>"; };
 		34282E652C971B6D00895112 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		34282E6D2C97697300895112 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		34282E6F2C976ABB00895112 /* PlayfairDisplay.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PlayfairDisplay.ttf; sourceTree = "<group>"; };
+		34282E712C976BC700895112 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		34282E762C97898800895112 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		3466C67B2C9854A3002FFCDA /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +61,14 @@
 		34282E5C2C971B6C00895112 /* expendee */ = {
 			isa = PBXGroup;
 			children = (
+				34282E752C97895A00895112 /* modifiers */,
+				34282E712C976BC700895112 /* Info.plist */,
+				34282E6C2C9768F800895112 /* pages */,
 				34282E5D2C971B6C00895112 /* expendeeApp.swift */,
-				34282E5F2C971B6C00895112 /* ContentView.swift */,
 				34282E612C971B6D00895112 /* Assets.xcassets */,
 				34282E632C971B6D00895112 /* expendee.entitlements */,
+				34282E6D2C97697300895112 /* constants.swift */,
+				34282E6F2C976ABB00895112 /* PlayfairDisplay.ttf */,
 				34282E642C971B6D00895112 /* Preview Content */,
 			);
 			path = expendee;
@@ -67,6 +80,23 @@
 				34282E652C971B6D00895112 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		34282E6C2C9768F800895112 /* pages */ = {
+			isa = PBXGroup;
+			children = (
+				34282E5F2C971B6C00895112 /* Login.swift */,
+			);
+			path = pages;
+			sourceTree = "<group>";
+		};
+		34282E752C97895A00895112 /* modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				34282E762C97898800895112 /* TextField.swift */,
+				3466C67B2C9854A3002FFCDA /* Button.swift */,
+			);
+			path = modifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34282E662C971B6D00895112 /* Preview Assets.xcassets in Resources */,
+				34282E702C976ABB00895112 /* PlayfairDisplay.ttf in Resources */,
 				34282E622C971B6D00895112 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,8 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34282E602C971B6C00895112 /* ContentView.swift in Sources */,
+				3466C67C2C9854A3002FFCDA /* Button.swift in Sources */,
+				34282E602C971B6C00895112 /* Login.swift in Sources */,
 				34282E5E2C971B6C00895112 /* expendeeApp.swift in Sources */,
+				34282E6E2C97697300895112 /* constants.swift in Sources */,
+				34282E772C97898800895112 /* TextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +308,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = expendee/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -312,6 +347,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = expendee/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

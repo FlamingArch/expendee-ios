@@ -11,7 +11,7 @@ import SwiftUI
 struct expendeeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PageLogin()
         }
     }
 }
