@@ -15,6 +15,9 @@
 		34282E702C976ABB00895112 /* PlayfairDisplay.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 34282E6F2C976ABB00895112 /* PlayfairDisplay.ttf */; };
 		34282E772C97898800895112 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34282E762C97898800895112 /* TextField.swift */; };
 		3466C67C2C9854A3002FFCDA /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3466C67B2C9854A3002FFCDA /* Button.swift */; };
+		3466C67E2C985837002FFCDA /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3466C67D2C985837002FFCDA /* SignUp.swift */; };
+		3466C6802C985905002FFCDA /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3466C67F2C985905002FFCDA /* Text.swift */; };
+		3466C6832C9859C7002FFCDA /* SocialSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3466C6822C9859C7002FFCDA /* SocialSignIn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		34282E712C976BC700895112 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		34282E762C97898800895112 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		3466C67B2C9854A3002FFCDA /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		3466C67D2C985837002FFCDA /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		3466C67F2C985905002FFCDA /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		3466C6822C9859C7002FFCDA /* SocialSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialSignIn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,7 @@
 		34282E5C2C971B6C00895112 /* expendee */ = {
 			isa = PBXGroup;
 			children = (
+				3466C6812C9859B7002FFCDA /* views */,
 				34282E752C97895A00895112 /* modifiers */,
 				34282E712C976BC700895112 /* Info.plist */,
 				34282E6C2C9768F800895112 /* pages */,
@@ -86,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				34282E5F2C971B6C00895112 /* Login.swift */,
+				3466C67D2C985837002FFCDA /* SignUp.swift */,
 			);
 			path = pages;
 			sourceTree = "<group>";
@@ -95,8 +103,17 @@
 			children = (
 				34282E762C97898800895112 /* TextField.swift */,
 				3466C67B2C9854A3002FFCDA /* Button.swift */,
+				3466C67F2C985905002FFCDA /* Text.swift */,
 			);
 			path = modifiers;
+			sourceTree = "<group>";
+		};
+		3466C6812C9859B7002FFCDA /* views */ = {
+			isa = PBXGroup;
+			children = (
+				3466C6822C9859C7002FFCDA /* SocialSignIn.swift */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,8 +187,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3466C6832C9859C7002FFCDA /* SocialSignIn.swift in Sources */,
 				3466C67C2C9854A3002FFCDA /* Button.swift in Sources */,
+				3466C67E2C985837002FFCDA /* SignUp.swift in Sources */,
 				34282E602C971B6C00895112 /* Login.swift in Sources */,
+				3466C6802C985905002FFCDA /* Text.swift in Sources */,
 				34282E5E2C971B6C00895112 /* expendeeApp.swift in Sources */,
 				34282E6E2C97697300895112 /* constants.swift in Sources */,
 				34282E772C97898800895112 /* TextField.swift in Sources */,

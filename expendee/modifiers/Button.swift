@@ -11,6 +11,7 @@ struct ThemedPrimaryButton: ViewModifier {
     func body(content: Content) -> some View {
         content
             .padding(16)
+            .fontWeight(.bold)
             .foregroundStyle(Color.white)
             .background(RoundedRectangle(cornerRadius: 16).foregroundStyle(Color.accentColor))
     }
@@ -20,6 +21,7 @@ struct ThemedSecondaryButton: ViewModifier {
     func body(content: Content) -> some View {
         content
             .padding(16)
+            .fontWeight(.bold)
             .foregroundStyle(Color.accentColor)
             .background(RoundedRectangle(cornerRadius: 16).foregroundStyle(Color.accentColor.opacity(0.2)))
     }

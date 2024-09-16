@@ -16,9 +16,9 @@ struct PageLogin: View {
             VStack(spacing: 24) {
                 Text(K.appName)
                     .textCase(.uppercase)
-                    .font(.custom("Playfair Display", size: 28))
+                    .font(.custom("Playfair Display", size: 36))
                     .fontWeight(.black)
-                Text("Sign in with your Expendee ID").opacity(0.8)
+                Text("Sign in with your Expendee ID").modifier(ThemedCaptionText())
                 
                 TextField("Username", text: $username).modifier(ThemedTextField())
                 SecureField("Password", text: $password).modifier(ThemedTextField())
@@ -27,9 +27,9 @@ struct PageLogin: View {
                     Text("Sign In").frame(maxWidth: .infinity)
                 }.modifier(ThemedPrimaryButton())
                 
-                Text("Or Continue Via").opacity(0.8)
+                SocialSignIn()
                 
-                Text("Don't Have an Account?").opacity(0.8)
+                Text("Don't Have an Account?").modifier(ThemedCaptionText())
                 
                 Button {} label: {
                     Text("Sign Up").frame(maxWidth: .infinity)
